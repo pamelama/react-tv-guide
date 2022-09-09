@@ -1,9 +1,19 @@
-const App = () => {
+import Navbar from "./components/Navbar/Navbar";
+import PopularHero from './components/PopularTvShows/PopularHero'
+import PopularList from './components/PopularTvShows/PopularList'
+import Footer from './components/Footer/Footer'
+
+function App() {
   return (
     <>
-        <h1 className='text-6xl text-center font-bold'>TVGuide</h1>
+      <Navbar />
+      <PopularHero/>
+      <div className="container mx-auto">
+        <PopularList/>
+      </div>
+      <Footer/>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
