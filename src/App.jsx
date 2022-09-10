@@ -1,17 +1,13 @@
-import Navbar from "./components/Navbar/Navbar";
-import PopularHero from './components/PopularTvShows/PopularHero'
-import PopularList from './components/PopularTvShows/PopularList'
-import Footer from './components/Footer/Footer'
+import { Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
-function App() {
+const App = () => {
   return (
     <>
       <Navbar />
-      <PopularHero/>
-      <div className="container mx-auto">
-        <PopularList/>
-      </div>
-      <Footer/>
+      <Outlet />
+      <Footer />
     </>
   );
 }

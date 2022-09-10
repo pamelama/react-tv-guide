@@ -1,13 +1,12 @@
-const Brand = (props) => {
+import { Link } from "react-router-dom";
+
+const Brand = () => {
   return (
-    <a href={props}>
-      <h1 className="text-3xl font-bold text-red-600 transition-colors  delay-100 hover:text-gray-50">
-        tv
-        <span className="font-medium italic text-gray-50 transition-colors delay-150 hover:text-red-600">
-          guide
-        </span>
+    <Link to="/">
+      <h1 className="text-3xl font-bold italic text-gray-100 transition-colors delay-100 hover:text-gray-50">
+        tvGuide
       </h1>
-    </a>
+    </Link>
   );
 };
 
